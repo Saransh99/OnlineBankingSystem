@@ -134,9 +134,15 @@
     <Compile Include="Migrations\201909191552438_InitialModel.Designer.cs">
       <DependentUpon>201909191552438_InitialModel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201909191631446_SecondModel.cs" />
+    <Compile Include="Migrations\201909191631446_SecondModel.Designer.cs">
+      <DependentUpon>201909191631446_SecondModel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountDetail.cs" />
     <Compile Include="Models\Administrator.cs" />
+    <Compile Include="Models\Beneficiary.cs" />
+    <Compile Include="Models\BranchInformation.cs" />
     <Compile Include="Models\BranchManager.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\OnlineBankingSystemContext.cs" />
@@ -198,6 +204,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201909191552438_InitialModel.resx">
       <DependentUpon>201909191552438_InitialModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201909191631446_SecondModel.resx">
+      <DependentUpon>201909191631446_SecondModel.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

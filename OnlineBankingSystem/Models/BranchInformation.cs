@@ -6,13 +6,13 @@ using System.Web;
 
 namespace OnlineBankingSystem.Models
 {
-    public class Administrator
+    public class BranchInformation
     {
         public int Id { get; set; }
 
         [Required]
-        public string password { get; set; }
-        public BranchManager BranchManager { get; set; }
-        
+        public string Address { get; set; }
+
+
     }
 }
