@@ -6,6 +6,10 @@ using System.Web.Mvc;
 
 namespace OnlineBankingSystem.Controllers
 {
+
+    // always populate the database using migration 
+    // never touch the table file in the database manually 
+
     public class HomeController : Controller
     {
         public ActionResult Index()
@@ -26,5 +30,10 @@ namespace OnlineBankingSystem.Controllers
 
             return View();
         }
+        public ActionResult CustomerCare() {
+
+            return View();
+        }
+
     }
 }

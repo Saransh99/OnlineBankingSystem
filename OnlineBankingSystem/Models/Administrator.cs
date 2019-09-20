@@ -11,7 +11,9 @@ namespace OnlineBankingSystem.Models
         public int Id { get; set; }
 
         [Required]
-        public string password { get; set; }
+        public string Password { get; set; }
+        public string Username { get; set; }
+
         public BranchManager BranchManager { get; set; }
         
     }

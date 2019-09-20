@@ -126,6 +126,12 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AdministratorController.cs" />
+    <Compile Include="Controllers\BranchManagerController.cs" />
+    <Compile Include="Controllers\CalculatorController.cs" />
+    <Compile Include="Controllers\CardController.cs" />
+    <Compile Include="Controllers\CustomerController.cs" />
+    <Compile Include="Controllers\FundTransferController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -138,6 +144,18 @@
     <Compile Include="Migrations\201909191631446_SecondModel.Designer.cs">
       <DependentUpon>201909191631446_SecondModel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201909201607464_RegistrationAdded.cs" />
+    <Compile Include="Migrations\201909201607464_RegistrationAdded.Designer.cs">
+      <DependentUpon>201909201607464_RegistrationAdded.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201909201609344_DBSetAdded.cs" />
+    <Compile Include="Migrations\201909201609344_DBSetAdded.Designer.cs">
+      <DependentUpon>201909201609344_DBSetAdded.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201909201703252_MadeSomeChanges.cs" />
+    <Compile Include="Migrations\201909201703252_MadeSomeChanges.Designer.cs">
+      <DependentUpon>201909201703252_MadeSomeChanges.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountDetail.cs" />
     <Compile Include="Models\Administrator.cs" />
@@ -146,6 +164,7 @@
     <Compile Include="Models\BranchManager.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\OnlineBankingSystemContext.cs" />
+    <Compile Include="Models\Registration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -184,6 +203,40 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Administrator\AddBranchManager.cshtml" />
+    <Content Include="Views\Administrator\DeleteBranchManager.cshtml" />
+    <Content Include="Views\Administrator\EditBranchManager.cshtml" />
+    <Content Include="Views\Administrator\SearchBranchManager.cshtml" />
+    <Content Include="Views\Administrator\Index.cshtml" />
+    <Content Include="Views\BranchManager\Index.cshtml" />
+    <Content Include="Views\BranchManager\PendingRequest.cshtml" />
+    <Content Include="Views\BranchManager\UpdateRequest.cshtml" />
+    <Content Include="Views\BranchManager\AllRequests.cshtml" />
+    <Content Include="Views\FundTransfer\Index.cshtml" />
+    <Content Include="Views\FundTransfer\Neft.cshtml" />
+    <Content Include="Views\FundTransfer\Rtgs.cshtml" />
+    <Content Include="Views\Customer\Index.cshtml" />
+    <Content Include="Views\Customer\Login.cshtml" />
+    <Content Include="Views\Customer\RequestStatus.cshtml" />
+    <Content Include="Views\Customer\Register.cshtml" />
+    <Content Include="Views\Customer\AccountDetails.cshtml" />
+    <Content Include="Views\Customer\AccountStatement.cshtml" />
+    <Content Include="Views\Customer\AddBeneficiary.cshtml" />
+    <Content Include="Views\Customer\TransferFunds.cshtml" />
+    <Content Include="Views\Home\CustomerCare.cshtml" />
+    <Content Include="Views\Card\Index.cshtml" />
+    <Content Include="Views\Card\CreditCard.cshtml" />
+    <Content Include="Views\Card\DebitCard.cshtml" />
+    <Content Include="Views\Calculator\Index.cshtml" />
+    <Content Include="Views\Calculator\CreditCardEMI.cshtml" />
+    <Content Include="Views\Calculator\HomeLoanEMI.cshtml" />
+    <Content Include="Views\Calculator\FourWheelerEMI.cshtml" />
+    <Content Include="Views\Calculator\TwoWheelerEMI.cshtml" />
+    <Content Include="Views\Administrator\Login.cshtml" />
+    <Content Include="Views\Administrator\Logout.cshtml" />
+    <Content Include="Views\BranchManager\Login.cshtml" />
+    <Content Include="Views\BranchManager\Logout.cshtml" />
+    <Content Include="Views\Customer\Logout.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -207,6 +260,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201909191631446_SecondModel.resx">
       <DependentUpon>201909191631446_SecondModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201909201607464_RegistrationAdded.resx">
+      <DependentUpon>201909201607464_RegistrationAdded.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201909201609344_DBSetAdded.resx">
+      <DependentUpon>201909201609344_DBSetAdded.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201909201703252_MadeSomeChanges.resx">
+      <DependentUpon>201909201703252_MadeSomeChanges.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

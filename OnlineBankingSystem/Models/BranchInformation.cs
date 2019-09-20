@@ -11,7 +11,20 @@ namespace OnlineBankingSystem.Models
         public int Id { get; set; }
 
         [Required]
-        public string Address { get; set; }
+        public string BranchCode { get; set; }
+
+        [Required]
+        public string State { get; set; }
+
+        [Required]
+        public string City { get; set; }
+
+        [Required]
+        public string PinCode { get; set; }
+
+        [Required]
+        public string IFSCode { get; set; }
+
 
 
     }

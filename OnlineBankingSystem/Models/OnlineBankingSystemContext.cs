@@ -14,6 +14,8 @@ namespace OnlineBankingSystem.Models
         public DbSet<AccountDetail> AccountDetails { get; set; }
         public DbSet<Beneficiary> Beneficiaries { get; set; }
         public DbSet<BranchInformation> BranchInformations { get; set; }
-        
+        public DbSet<Registration> Registrations { get; set; }
+
+
     }
 }
